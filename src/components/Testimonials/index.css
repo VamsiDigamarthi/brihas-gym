@@ -1,0 +1,149 @@
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0rem 5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.left-t {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left-t > :nth-child(1) {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.left-t > :nth-child(2) {
+  font-size: 2.5rem;
+}
+
+.left-t > :nth-child(3) {
+  font-size: 2rem;
+  color: white;
+}
+
+.left-t > :nth-child(4) {
+  color: white;
+  line-height: 2rem;
+}
+
+.left-t > :nth-child(5) {
+  color: orange;
+}
+
+.left-t > span > :nth-child(1) {
+  color: white;
+}
+
+.right-t {
+  padding: 1rem;
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-t > :nth-child(3) {
+  width: 12rem;
+  height: 14rem;
+}
+
+.right-t > :nth-child(1) {
+  position: absolute;
+  top: 0.5rem;
+  right: 9.3rem;
+  border: 2px solid orange;
+  width: 11rem;
+  height: 12rem;
+  z-index: -49;
+}
+
+.right-t > :nth-child(2) {
+  position: absolute;
+  background: var(--orange);
+  width: 12rem;
+  height: 12rem;
+  z-index: -66;
+  top: 3.3rem;
+  right: 7.7rem;
+}
+
+.arrows {
+  position: relative;
+}
+
+.arrows > img {
+  width: 1rem;
+  height: 1rem;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.blur-h {
+  width: 300px;
+  height: 300px;
+  left: 0;
+  top: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+    padding: 0rem 2rem;
+    margin-bottom: 0rem;
+  }
+  .left-t {
+    gap: 1rem;
+  }
+
+  .left-t > :nth-child(1) {
+    color: orange;
+    font-size: 1.1rem;
+  }
+  .left-t > :nth-child(2) {
+    font-size: 2.3rem;
+  }
+  .left-t > :nth-child(3) {
+    font-size: 2.3rem;
+    color: white;
+  }
+  .left-t > :nth-child(5) {
+    font-size: 0.6rem;
+  }
+
+  .right-t > :nth-child(3) {
+    width: 100%;
+    height: 13rem;
+  }
+
+  .arrows > img {
+    margin-top: 3rem;
+  }
+
+  .right-t > :nth-child(1) {
+    position: absolute;
+    top: 0.5rem;
+    right: 2.8rem;
+    border: 2px solid orange;
+    width: 11rem;
+    height: 12rem;
+    z-index: -49;
+  }
+
+  .right-t > :nth-child(2) {
+    position: absolute;
+    background: var(--orange);
+    width: 12rem;
+    height: 12rem;
+    z-index: -66;
+    top: 2.4rem;
+    right: 0.6rem;
+  }
+}
